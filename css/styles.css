@@ -80,6 +80,13 @@ body {
 .modal {
   padding: 10px 52px;
 }
+.subscribe {
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  fill: var(--background-main-color);
+}
 .button:hover {
   background-color: var(--hover-focus-color);
 }
@@ -682,13 +689,33 @@ body {
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
+.footer-sub-form {
+  display: flex;
+  gap: 12px;
+}
 .footer-sub-input {
+  color: var(--secondary-text-color);
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   width: 385px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-sub-input::placeholder {
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-sub-input:hover,
+.footer-sub-input:focus {
+  border-color: var(--accent-color);
 }
 
 /* --------------------- portfolio second page -------------------- */
@@ -820,13 +847,21 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
+  outline: 0;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.close-modal:hover,
+.close-modal:focus {
+  background-color: var(--accent-color);
+  fill: var(--background-main-color);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-.modal-form {
 }
 .modal-title {
   font-weight: 700;
@@ -846,6 +881,9 @@ body {
   line-height: 14px;
   letter-spacing: 1.16;
   outline: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus,
 .modal-input:hover {
@@ -866,6 +904,9 @@ body {
   line-height: 14px;
   letter-spacing: 1.16;
   outline: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea:focus,
 .modal-textarea:hover {
