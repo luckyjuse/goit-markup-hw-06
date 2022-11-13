@@ -582,9 +582,10 @@ body {
 .footer > .container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
 }
-
+.footer-adress-section {
+  margin-right: auto;
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -607,7 +608,6 @@ body {
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .map-link {
   font-size: 14px;
   line-height: 1.71;
@@ -641,6 +641,9 @@ body {
 .address-link:focus {
   color: var(--accent-color);
 }
+.footer-soc-section {
+  margin-right: auto;
+}
 .footer-soc-description {
   margin-bottom: 20px;
   font-weight: 700;
@@ -650,7 +653,6 @@ body {
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
-
 .footer-soc-list {
   display: flex;
   gap: 10px;
@@ -795,7 +797,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
